@@ -24,7 +24,7 @@ export default function SkillsSection() {
     <section
       id="skills"
       ref={useSectionInView("Skills", { threshold: 0.75 })}
-      className="scroll-mt-28 mb-28 max-w-[53rem] text-center sm:mb-40"
+      className="scroll-mt-52 max-w-[53rem] text-center my-44 mt-52"
     >
       <SectionHeading>My Skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">

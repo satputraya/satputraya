@@ -9,12 +9,12 @@ import { projectsData } from "@/lib/data";
 export default function ProjectsSection() {
   return (
     <motion.section
-      ref={useSectionInView("Projects")}
+      ref={useSectionInView("Projects", { threshold: 0.5 })}
       id="projects"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className="mt-10 scroll-mt-32 mb-36"
+      className="mt-10 scroll-mt-32"
     >
       <SectionHeading>Recent Projects</SectionHeading>
       <div>
