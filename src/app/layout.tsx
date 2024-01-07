@@ -4,11 +4,12 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { GradientBackground } from "@/components/template";
 import { Header } from "@/components/molecules";
+import { ActiveSectionContextProvider } from "@/context";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mas Eka | Fullstack Developer",
+  title: "Mas Eka - Backend Developer",
   description: "Eka is a full-stack developer",
 };
 
@@ -18,16 +19,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={cn(
-          "bg-gray-50 text-gray-950 relative pt-28 sm:pt-36",
+          "bg-gray-50 text-gray-950 relative pt-[5.5rem]",
           inter.className
         )}
       >
         <GradientBackground />
-        <Header />
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
