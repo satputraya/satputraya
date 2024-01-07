@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
+
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
-import Link from "next/link";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { cn } from "@/lib/utils";
+import { links } from "@/lib/data";
 import { useActiveSectionContext, useHeader } from "@/hooks";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -42,15 +42,13 @@ export default function Header() {
                 animate={{ y: 0, opacity: 1 }}
                 className="h-3/4 flex items-center justify-center relative cursor-pointer"
               >
-                <Link
-                  href={
-                    window.location.pathname === "/eka-do"
-                      ? link.hash
-                      : "/eka-do" + link.hash
-                  }
+                <div
                   onClick={() => {
                     setActiveSection(link.name);
                     setTimeOfLastClick(Date.now());
+                    window.location.pathname === "/eka-do"
+                      ? (window.location.href = "/eka-do" + link.hash)
+                      : window.location.assign("/eka-do" + link.hash);
                   }}
                   className={cn(
                     "group flex w-full items-center justify-center p-3 hover:text-gray-950 transition",
@@ -72,7 +70,7 @@ export default function Header() {
                         className="bg-gray-200/50 rounded-full absolute inset-0 -z-10"
                       ></motion.span>
                     )}
-                </Link>
+                </div>
               </motion.li>
             ))}
             <motion.li
