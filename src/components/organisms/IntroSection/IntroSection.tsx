@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { PlatformIcon } from "@/components/atoms";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { HiArrowDown } from "react-icons/hi2";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import ekaImg from "@/assets/images/eka.jpg";
-import { PlatformIcon } from "@/components/atoms";
 
 const socialMediaData = [
   {
