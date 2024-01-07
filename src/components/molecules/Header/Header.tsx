@@ -9,7 +9,8 @@ import { cn } from "@/lib/utils";
 import { useActiveSectionContext, useHeader } from "@/hooks";
 
 export default function Header() {
-  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   if (useHeader()) {
     return (
@@ -43,7 +44,10 @@ export default function Header() {
               >
                 <Link
                   href={link.hash}
-                  onClick={() => setActiveSection(link.name)}
+                  onClick={() => {
+                    setActiveSection(link.name);
+                    setTimeOfLastClick(Date.now());
+                  }}
                   className={cn(
                     "group flex w-full items-center justify-center p-3 hover:text-gray-950 transition",
                     activeSection === link.name && "text-gray-950"

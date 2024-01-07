@@ -14,7 +14,7 @@ export default function AboutSection() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className="mb-24 max-w-[45rem] text-center px-4 text-sm sm:text-base leading-6 sm:leading-8"
+      className="max-w-[45rem] text-center px-4 text-sm sm:text-base leading-6 sm:leading-8"
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
@@ -46,22 +46,6 @@ export default function AboutSection() {
         learning about{" "}
         <span className="font-medium">investment and financial growth</span>.
       </p>
-      <motion.div
-        className="flex items-center justify-center px-4 text-lg font-medium mt-10 sm:mt-16"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.4,
-        }}
-      >
-        <div
-          onClick={() => window.location.assign("/eka-do")}
-          className="group bg-gradient-to-r from-[#fbe2e3] to-[#dbd7fb] shadow px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-neutral-700"
-        >
-          see what i cooked{" "}
-          <HiArrowRight className="opacity-60 group-hover:translate-x-1 transition" />
-        </div>
-      </motion.div>
     </motion.section>
   );
 }

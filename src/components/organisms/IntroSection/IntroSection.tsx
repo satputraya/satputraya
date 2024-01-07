@@ -8,6 +8,22 @@ import { FaGithub, FaInstagram } from "react-icons/fa";
 import { HiArrowDown } from "react-icons/hi2";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import ekaImg from "@/assets/images/eka.jpg";
+import { PlatformIcon } from "@/components/atoms";
+
+const socialMediaData = [
+  {
+    href: "https://linkedin.com",
+    icon: <BsLinkedin />,
+  },
+  {
+    href: "https://github.com/satryaputra",
+    icon: <FaGithub />,
+  },
+  {
+    href: "https://github.com/_satryaputra",
+    icon: <FaInstagram />,
+  },
+] as const;
 
 export default function IntroSection() {
   return (
@@ -72,6 +88,7 @@ export default function IntroSection() {
         >
           Little bit full-stack actually <span className="text-2xl">😜</span>
         </motion.span>
+        {/* Custom Arrow */}
         <motion.span
           initial={{ opacity: 0, y: -50, x: 50, rotate: -90 }}
           animate={{ opacity: 1, y: 0, x: 0, rotate: -90 }}
@@ -147,10 +164,6 @@ export default function IntroSection() {
           <Link
             href="#about"
             className="group bg-gray-900 shadow text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-            onClick={() => {
-              // setActiveSection("Contact");
-              // setTimeOfLastClick(Date.now());
-            }}
           >
             know me ?{" "}
             <HiArrowDown className="opacity-70 group-hover:translate-y-[.15rem] group-hover:scale-105 transition" />
@@ -158,29 +171,11 @@ export default function IntroSection() {
         </div>
 
         <div className="flex gap-2">
-          <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://linkedin.com"
-            target="_blank"
-          >
-            <BsLinkedin />
-          </a>
-
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://github.com"
-            target="_blank"
-          >
-            <FaGithub />
-          </a>
-
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://github.com"
-            target="_blank"
-          >
-            <FaInstagram />
-          </a>
+          {socialMediaData.map((data, index) => (
+            <PlatformIcon key={index} href={data.href}>
+              {data.icon}
+            </PlatformIcon>
+          ))}
         </div>
       </motion.div>
     </section>

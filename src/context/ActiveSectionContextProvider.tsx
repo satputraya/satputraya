@@ -13,6 +13,8 @@ interface ActiveSectionContextProviderProps {
 interface IActiveSectionContext {
   activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+  timeOfLastClick: number;
+  setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export const ActiveSectionContext =
@@ -23,9 +25,17 @@ export default function ActiveSectionContextProvider({
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] =
     React.useState<SectionName>("Projects");
+  const [timeOfLastClick, setTimeOfLastClick] = React.useState(0); // to diable observer temp
 
   return (
-    <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
+    <ActiveSectionContext.Provider
+      value={{
+        activeSection,
+        setActiveSection,
+        timeOfLastClick,
+        setTimeOfLastClick,
+      }}
+    >
       {children}
     </ActiveSectionContext.Provider>
   );
