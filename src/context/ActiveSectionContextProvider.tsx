@@ -1,10 +1,7 @@
 "use client";
 
+import type { SectionName } from "@/lib/types";
 import React from "react";
-
-import { links } from "@/lib/data";
-
-type SectionName = (typeof links)[number]["name"];
 
 interface ActiveSectionContextProviderProps {
   children: React.ReactNode;
@@ -24,8 +21,8 @@ export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] =
-    React.useState<SectionName>("Projects");
-  const [timeOfLastClick, setTimeOfLastClick] = React.useState(0); // to diable observer temp
+    React.useState<SectionName>("Projects"); // default value header
+  const [timeOfLastClick, setTimeOfLastClick] = React.useState(0); // to disable header observer temp
 
   return (
     <ActiveSectionContext.Provider
