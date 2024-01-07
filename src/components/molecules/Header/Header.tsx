@@ -43,43 +43,70 @@ export default function Header() {
                 className="h-3/4 flex items-center justify-center relative cursor-pointer"
               >
                 <Link
-                  href={link.hash}
+                  href={
+                    window.location.pathname === "/eka-do"
+                      ? link.hash
+                      : "/eka-do" + link.hash
+                  }
                   onClick={() => {
                     setActiveSection(link.name);
                     setTimeOfLastClick(Date.now());
                   }}
                   className={cn(
                     "group flex w-full items-center justify-center p-3 hover:text-gray-950 transition",
-                    activeSection === link.name && "text-gray-950"
+                    window.location.pathname !== "/contacts" &&
+                      activeSection === link.name &&
+                      "text-gray-950"
                   )}
                 >
                   {link.name}
-                  {activeSection === link.name && (
-                    <motion.span
-                      layoutId="activeSection"
-                      transition={{
-                        type: "spring",
-                        stiffness: 380,
-                        damping: 30,
-                      }}
-                      className="bg-gray-200/50 rounded-full absolute inset-0 -z-10"
-                    ></motion.span>
-                  )}
+                  {window.location.pathname !== "/contacts" &&
+                    activeSection === link.name && (
+                      <motion.span
+                        layoutId="activeSection"
+                        transition={{
+                          type: "spring",
+                          stiffness: 380,
+                          damping: 30,
+                        }}
+                        className="bg-gray-200/50 rounded-full absolute inset-0 -z-10"
+                      ></motion.span>
+                    )}
                 </Link>
               </motion.li>
             ))}
             <motion.li
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              className="group h-3/4 flex items-center justify-center pr-4 cursor-pointer"
+              className={cn(
+                "group h-3/4 flex items-center justify-center cursor-pointer relative",
+                window.location.pathname !== "/contacts" && "pr-4"
+              )}
             >
               <div
                 onClick={() => window.location.assign("/contacts")}
-                className="flex w-full items-center justify-center p-3 pr-5 hover:text-gray-950 transition"
+                className={cn(
+                  "flex w-full items-center justify-center p-3 hover:text-gray-950 transition",
+                  window.location.pathname !== "/contacts" && "pr-5",
+                  window.location.pathname === "/contacts" && "text-gray-950"
+                )}
               >
                 Contacts
+                {window.location.pathname === "/contacts" && (
+                  <motion.span
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                    className="bg-gray-200/50 rounded-full absolute inset-0 -z-10"
+                  ></motion.span>
+                )}
               </div>
-              <FaArrowCircleRight className="group-hover:translate-x-1 group-hover:text-gray-950 scale-[1.3] opacity-60 transition" />
+              {window.location.pathname !== "/contacts" && (
+                <FaArrowCircleRight className="group-hover:translate-x-1 group-hover:text-gray-950 scale-[1.3] opacity-60 transition" />
+              )}
             </motion.li>
           </ul>
         </nav>
