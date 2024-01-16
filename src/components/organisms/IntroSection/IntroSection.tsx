@@ -74,7 +74,8 @@ export default function IntroSection() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Eka.</span> I'm a happy{" "}
-        <span className="font-bold">backend developer</span>
+        <span className="font-bold">Backend Developer</span>{" "}
+        <span className="italic">(Junior)</span>
         <motion.span
           initial={{ opacity: 0, scale: 0, rotate: 12 }}
           animate={{ opacity: 1, scale: 1, rotate: 12 }}

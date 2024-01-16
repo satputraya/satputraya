@@ -32,10 +32,10 @@ export default function AboutSection() {
         <span className="font-medium">
           .NET, React, Node.js, and PostgreSQL
         </span>
-        . I am familiar with Clean Architecture with CQRS Pattern and also
-        Typescript and Prisma. I am always looking to learn new technologies. I
-        am currently doing an <span className="font-medium">internship</span> as
-        a web developer.
+        . I am familiar with Clean Architecture, CQRS Pattern, Typescript and
+        Prisma. I am always looking to learn new technologies. I am currently
+        doing an <span className="font-medium">internship</span> as a web
+        developer.
       </p>
 
       <p>
