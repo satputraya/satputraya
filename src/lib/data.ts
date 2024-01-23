@@ -20,10 +20,18 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "UT School IT-Programming",
-    location: "Jakarta Timur, Indonesia",
+    title: "SMK NEGERI 1 NGASEM",
+    location: "Kediri, Jawa Timur, Indonesia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "A vocational high school and I graduated from the computer and network engineering department.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020 - 2023",
+  },
+  {
+    title: "UT School IT-Programming",
+    location: "Jakarta Timur, Jakarta, Indonesia",
+    description:
+      "I learned web development and mobile app development for 2 months.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
@@ -31,7 +39,7 @@ export const experiencesData = [
     title: "Full-stack Developer",
     location: "Hologram Indonesia",
     description:
-      "I worked as a full-stack developer use Reactjs. I also upskilled to the full stack.",
+      "During my freelance, I was involved in a project to create a company profile for an overseas company using React and NodeJS.",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
@@ -39,7 +47,7 @@ export const experiencesData = [
     title: "Backend Developer",
     location: "United Tracktors HO (DAD)",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I interned as a backend developer here, I learned a lot about Architectural Pattern especially Clean Arcitecture and CQRS Pattern using .NET Microsoft.",
     icon: React.createElement(FaReact),
     date: "2023 - 2024",
   },
@@ -47,25 +55,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Vemo",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: "/corpcomment.png",
+      "Vehicle Monitoring Operator is an application that allows users to monitor the condition of their vehicle.",
+    tags: [".NET", "React", "Typescript", "Tailwind", "PostgreSQL", "Redis"],
+    imageUrl: "/vemo.png",
   },
   {
-    title: "rmtDev",
+    title: "Portofolio",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: "/rmtdev.png",
+      "I created this web portfolio when I joined UT School's IT-Programming program.",
+    tags: ["React", "Tailwind", "Formspree"],
+    imageUrl: "/portofolio-v2.png",
   },
   {
-    title: "Word Analytics",
+    title: "Portofolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: "/wordanalytics.png",
+      "I created this web portfolio when I was in vocational high school.",
+    tags: ["HTML", "CSS", "Javascript"],
+    imageUrl: "/portofolio-v1.png",
   },
 ] as const;
 
@@ -76,17 +84,21 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
+  "NodeJS",
+  "C#",
+  ".NET",
   "Git",
   "Tailwind",
   "Prisma",
-  "MongoDB",
+  "Azure Dev Ops",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "Zustand",
+  "React hook form",
+  "Shadcn/ui",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
+  "Firebase",
+  "Docker",
 ] as const;
