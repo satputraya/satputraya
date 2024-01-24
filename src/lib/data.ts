@@ -62,14 +62,21 @@ export const projectsData = [
     imageUrl: "/vemo.png",
   },
   {
-    title: "Portofolio",
+    title: "Portofolio V2",
     description:
       "I created this web portfolio when I joined UT School's IT-Programming program.",
     tags: ["React", "Tailwind", "Formspree"],
     imageUrl: "/portofolio-v2.png",
   },
   {
-    title: "Portofolio",
+    title: "FMS EKA",
+    description:
+      "This is a File Managemenent Web App, I created for my final exercixe in UT-School's IT-Programming Program.",
+    tags: ["React", "Redux", "Firebase"],
+    imageUrl: "/fms-eka.png",
+  },
+  {
+    title: "Portofolio V1",
     description:
       "I created this web portfolio when I was in vocational high school.",
     tags: ["HTML", "CSS", "Javascript"],
