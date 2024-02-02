@@ -4,6 +4,7 @@ import React from "react";
 
 import {
   ExperiencesSection,
+  FooterSection,
   ProjectsSection,
   SkillsSection,
 } from "@/components/organisms";
@@ -14,6 +15,7 @@ export default function page() {
       <ProjectsSection />
       <SkillsSection />
       <ExperiencesSection />
+      <FooterSection />
     </main>
   );
 }

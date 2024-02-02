@@ -1,6 +1,7 @@
 import React from "react";
+import { BsLinkedin } from "react-icons/bs";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
@@ -15,6 +16,21 @@ export const links = [
   {
     name: "Experiences",
     hash: "#experiences",
+  },
+] as const;
+
+export const socialMediaData = [
+  {
+    href: "https://linkedin.com/in/satputraya",
+    icon: React.createElement(BsLinkedin),
+  },
+  {
+    href: "https://github.com/satryaputra",
+    icon: React.createElement(FaGithub),
+  },
+  {
+    href: "https://instagram.com/_satryaputra",
+    icon: React.createElement(FaInstagram),
   },
 ] as const;
 

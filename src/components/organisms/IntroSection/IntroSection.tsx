@@ -4,26 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { PlatformIcon } from "@/components/atoms";
-import { BsLinkedin } from "react-icons/bs";
-import { FaGithub, FaInstagram } from "react-icons/fa";
 import { HiArrowDown } from "react-icons/hi2";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import { socialMediaData } from "@/lib/data";
 import ekaImg from "@/assets/images/eka.jpg";
-
-const socialMediaData = [
-  {
-    href: "https://linkedin.com",
-    icon: <BsLinkedin />,
-  },
-  {
-    href: "https://github.com/satryaputra",
-    icon: <FaGithub />,
-  },
-  {
-    href: "https://github.com/_satryaputra",
-    icon: <FaInstagram />,
-  },
-] as const;
 
 export default function IntroSection() {
   return (

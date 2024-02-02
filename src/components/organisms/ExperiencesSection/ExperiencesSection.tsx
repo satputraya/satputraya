@@ -15,11 +15,11 @@ export default function ExperiencesSection() {
   return (
     <section
       id="experiences"
-      ref={useSectionInView("Experiences", { threshold: 0.5 })}
+      ref={useSectionInView("Experiences", { threshold: 0.3 })}
       className="scroll-mt-28 mt-20 mb-40"
     >
       <SectionHeading>Experiences</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="" animate>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement

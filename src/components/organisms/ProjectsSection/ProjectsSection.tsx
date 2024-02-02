@@ -9,7 +9,7 @@ import { projectsData } from "@/lib/data";
 export default function ProjectsSection() {
   return (
     <motion.section
-      ref={useSectionInView("Projects", { threshold: 0.5 })}
+      ref={useSectionInView("Projects")}
       id="projects"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}

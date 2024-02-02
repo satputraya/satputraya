@@ -5,6 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { GradientBackground } from "@/components/template";
 import { Header } from "@/components/molecules";
+import { FooterSection } from "@/components/organisms";
 import { ActiveSectionContextProvider } from "@/context";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,6 +33,7 @@ export default function RootLayout({
           {children}
         </ActiveSectionContextProvider>
         <GradientBackground />
+        {/* <FooterSection /> */}
       </body>
     </html>
   );
