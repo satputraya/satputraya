@@ -1,6 +1,6 @@
-# Eka Satrya Putra - Full-stack Developer 🚀
+# Mohammad Eka Satrya Putra 🚀
 
-A happy full-stack developer who strives to help others grow in web development 🤝
+A happy full-stack developer in web development 😁
 
 <p align="left">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
