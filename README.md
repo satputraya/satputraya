@@ -2,16 +2,12 @@
 
 A happy full-stack developer who strives to help others grow in web development 🤝
 
-I have worked on a variety of projects, from MVPs to full-scale applications. I have also held various positions in the web and mobile application development industry and have a lot of experience in the field.
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>
+</p>
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=satryaputra&size_weight=0.5&count_weight=0.5&hide=javascript,html,css,scss&layout=compact&langs_count=4&locale=en" alt="satryaputra" />
 
-Feel free to contact me if you need any help with your web development projects. I'm always willing to serve as a mentor on specific technologies and to help teams achieve success.
-
-Check all of my past projects and complete experience on [https://satputraya.vercel.app/eka-do](https://satputraya.vercel.app/eka-do)
-
-## About my personal website
-
-It built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend.
-
-- Deployed on Vercel: [https://satputraya.vercel.app](https://satputraya.vercel.app)
+Check my personal website on [https://satputraya.vercel.app/eka-do](https://satputraya.vercel.app)
 
 You can also follow my journey on Instragram [@_satryaputra](https://instagram.com/_satryaputra) or connect with me in Linkedin [linkedin.com/in/satputraya](https://linkedin.com/in/satputraya) 👋
