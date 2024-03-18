@@ -34,7 +34,7 @@ export default function AboutSection() {
         </span>
         . I am familiar with Clean Architecture, CQRS Pattern, Typescript and
         Prisma. I am always looking to learn new technologies. I am currently
-        doing an <span className="font-medium">internship</span> as a web
+        doing an <span className="font-medium">full-time</span> as a web
         developer.
       </p>
 
