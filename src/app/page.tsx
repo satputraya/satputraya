@@ -25,8 +25,7 @@ export default function Home() {
         >
           see what i cooked{" "}
           <HiArrowRight
-            cla
-            ssName="opacity-60 group-hover:translate-x-1 transition"
+            className="opacity-60 group-hover:translate-x-1 transition"
           />
         </div>
       </motion.div>
