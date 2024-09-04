@@ -21,12 +21,10 @@ export default function Home() {
       >
         <div
           onClick={() => window.location.assign("/eka-do")}
-          className="group bg-gradient-to-r from-[#fbe2e3] to-[#dbd7fb] shadow px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-neutral-700"
+          className="group bg-gradient-to-r from-[#fbe2e3] to-[#dbd7fb] shadow-lg hover:shadow-xl active:shadow-md px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-neutral-700"
         >
-          see what i cooked{" "}
-          <HiArrowRight
-            className="opacity-60 group-hover:translate-x-1 transition"
-          />
+          see what i do{" "}
+          <HiArrowRight className="opacity-60 group-hover:translate-x-1 transition-transform" />
         </div>
       </motion.div>
     </main>
