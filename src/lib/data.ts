@@ -72,29 +72,19 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Vemo",
-    description:
-      "Vehicle Monitoring Operator is an application that allows users to monitor the condition of their vehicle.",
+    description: "Vehicle Monitoring Operator is an application that allows users to monitor the condition of their vehicle.",
     tags: [".NET", "React", "Typescript", "Tailwind", "PostgreSQL", "Redis"],
     imageUrl: "/vemo.png",
   },
   {
-    title: "Portofolio V2",
-    description:
-      "I created this web portfolio when I joined UT School's IT-Programming program.",
-    tags: ["React", "Tailwind", "Formspree"],
-    imageUrl: "/portofolio-v2.png",
-  },
-  {
     title: "FMS EKA",
-    description:
-      "This is a File Managemenent Web App, I created for my final exercixe in UT-School's IT-Programming Program.",
+    description: "This is a simple web based file managament system, using firebase for authentication and storage.",
     tags: ["React", "Redux", "Firebase"],
     imageUrl: "/fms-eka.png",
   },
   {
-    title: "Portofolio V1",
-    description:
-      "I created this web portfolio when I was in vocational high school.",
+    title: "Simple Portofolio",
+    description: "My first web page that made me stick to web development.",
     tags: ["HTML", "CSS", "Javascript"],
     imageUrl: "/portofolio-v1.png",
   },
