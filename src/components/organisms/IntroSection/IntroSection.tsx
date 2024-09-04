@@ -9,6 +9,11 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { socialMediaData } from "@/lib/data";
 import ekaImg from "@/assets/images/eka.jpg";
 
+function handleResume() {
+  // window.open("https://satryaputra.vercel.app/resume.pdf", "_blank");
+  alert("Resume is not available yet.");
+}
+
 export default function IntroSection() {
   return (
     <section
@@ -58,8 +63,7 @@ export default function IntroSection() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Eka.</span> I'm a happy{" "}
-        <span className="font-bold">Backend Developer</span>{" "}
-        <span className="italic">(Junior)</span>
+        <span className="font-bold">Backend Developer</span>
         <motion.span
           initial={{ opacity: 0, scale: 0, rotate: 12 }}
           animate={{ opacity: 1, scale: 1, rotate: 12 }}
@@ -140,8 +144,7 @@ export default function IntroSection() {
         <div className="flex flex-col md:flex-row gap-4">
           <a
             className="group bg-white shadow px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="/CV.pdf"
-            download
+            onClick={handleResume}
           >
             my resume{" "}
             <IoDocumentTextOutline className="opacity-60 group-hover:scale-105 transition" />
@@ -150,7 +153,7 @@ export default function IntroSection() {
             href="#about"
             className="group bg-gray-900 shadow text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           >
-            know me ?{" "}
+            get in touch{" "}
             <HiArrowDown className="opacity-70 group-hover:translate-y-[.15rem] group-hover:scale-105 transition" />
           </Link>
         </div>
