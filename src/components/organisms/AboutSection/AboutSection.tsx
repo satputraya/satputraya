@@ -5,7 +5,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { SectionHeading } from "@/components/atoms";
-import { HiArrowRight } from "react-icons/hi2";
 
 export default function AboutSection() {
   return (
@@ -34,14 +33,13 @@ export default function AboutSection() {
         </span>
         . I am familiar with Clean Architecture, CQRS Pattern, Typescript and
         Prisma. I am always looking to learn new technologies. I am currently
-        doing an <span className="font-medium">full-time</span> as a web
+        doing an <span className="font-medium">full-time</span> as a backend
         developer.
       </p>
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, hangout alone or with my friends, and when
-        I was an intern, I really liked playing volleyball. I also enjoy{" "}
+        video games, watching movies, hangout alone or with my friends, and i really like playing volleyball. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
         <span className="font-medium">investment and financial growth</span>.
